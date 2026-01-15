@@ -1,0 +1,237 @@
+body {
+  background: black;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.drob li a{
+  position: relative !important;
+}
+
+.drob li a::before{
+  position: absolute !important;
+  content: "" !important;
+  border: 1px solid #dfa701 !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 0 !important;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.drob li a:focus::before{
+  width: 100% !important;
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+.modal-content {
+  background-color: #111 !important;
+  color: #fff !important;
+  border-radius: 10px;
+}
+
+.modal-content h5,
+.modal-content label {
+  color: #ffc107 !important;
+}
+
+.modal-content input {
+  background-color: #222 !important;
+  color: #fff !important;
+  border: 1px solid #555 !important;
+}
+
+.modal-content input:focus {
+  border-color: #ffc107 !important;
+  box-shadow: 0 0 5px #ffc107 !important;
+}
+
+.modal-content button[type="submit"] {
+  background-color: #ffc107 !important;
+  color: #000 !important;
+  border: none !important;
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color: #e0a800 !important;
+  color: #000 !important;
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #fff8e1, #ffb300);
+  color: #222 !important;
+}  
+
+.carousel-item img{
+  height: 100vh !important;
+  background: center/cover !important;
+  object-fit: cover !important;
+}
+
+.carousel-caption{
+  background-color: rgba(45, 45, 45, 0.7) !important;
+  border-radius: 10px !important;
+  padding: 45px !important;
+}
+
+.card{
+  background: linear-gradient(135deg, #fff8e1, #ffb300);
+  color: #222 !important;
+}
+
+.accordion-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+  
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+  box-shadow: none !important;
+}
+
+.bg-image {
+  background-image: url('../images/food.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 40vh;
+  width: 100%;  
+}
+
+.container .col{
+  position: relative !important;
+}
+
+.container .col::before{
+  position: absolute !important;
+  z-index: 200 !important;
+  content: "" !important;
+  background-color: #dfa701 !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: 0.5s !important;
+}
+
+.container .col:hover::before{
+  width: 100% !important;
+  opacity: 0.1 !important;
+  visibility: visible !important;
+  height: 100% !important;
+}
+
+.container .col::after{
+  position: absolute !important;
+  content: "" !important;
+  background-color: #dfa701 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: 0.6s !important;
+}
+
+.container .col:hover::after{
+  width: 100% !important;
+  opacity: 0.1 !important;
+  visibility: visible !important;
+  height: 100% !important;
+}
+
+.thanks-card{
+  background-image: url('../images/man.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 20px;
+  transition: transform 0.3s;
+     
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#image-lf{
+  background-image: url('../images/man3.jpg') !important;
+}
+
+#image-md{
+  background-image: url('../images/man2.jpg') !important;
+}
+
+.thanks-card:hover {
+  transform: scale(0.9);
+}
+
+.thanks-card img {
+  width: 100px;
+  height: 130px;
+  border-radius: 40%;
+  margin-top: 40%;
+}
+  
+.podcast-card {
+  border-radius: 15px;
+  background: #f8f9fa;
+}
+
+.podcast-card small {
+  color: #666;
+}
+
+.clip-rg img{
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 17% 100%);
+}
+
+.clip-lf img{
+  clip-path: polygon(0 0, 100% 0%, 82% 100%, 0 100%);
+}
+
+.highlight {
+  border-bottom: 3px solid #f5c518;
+  padding-bottom: 2px;
+  width: 10%;
+}
+
+.podcast-card img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.podcast-card .btn {
+  border-radius: 20px;
+}
+
+.restaurant-news {
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+footer h5 {
+  color: #ffc107;
+}
+
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.thanks-card h5 {
+  color: #ff8c00;
+}
