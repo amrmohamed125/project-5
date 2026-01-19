@@ -234,4 +234,20 @@ footer a {
 
 .thanks-card h5 {
   color: #ff8c00;
+
+}
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+  .clip-rg img{
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+}
+
+.clip-lf img{
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+}
+
+.left {
+  margin-left: -10% !important;
+}
 }
