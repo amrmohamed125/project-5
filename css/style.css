@@ -250,4 +250,9 @@ footer a {
 .left {
   margin-left: -10% !important;
 }
+
+input[type="search"] {
+  margin-bottom: 1rem !important;
 }
+}
+
